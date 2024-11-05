@@ -1,8 +1,8 @@
 
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import Layout from './components/Layout'
-import About from './components/About'
-import NoPage from './components/NoPage'
+import About from './Pages/About'
+import NoPage from './Pages/NoPage'
 
 function App() {
 
