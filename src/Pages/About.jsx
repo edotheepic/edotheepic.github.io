@@ -1,15 +1,61 @@
+import { Link } from "react-router-dom";
+
 export default function About(params) {
     
     return(
-        <div className="text-lg px-8 overflow-auto">
-            about <br></br>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat quasi doloribus, alias odio earum minima rem. Repellat fugit minus sed aspernatur, veniam, nostrum recusandae commodi iusto esse numquam expedita itaque?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia expedita beatae magni fuga id eum quos, enim quis cum nam dicta accusantium neque repellendus amet reiciendis illum! Est, quis fugit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa recusandae ex dicta fugit molestiae aperiam necessitatibus repellendus, omnis dolorum, consequatur sequi, delectus mollitia? Mollitia nisi nemo iusto ad eum.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis dicta veritatis, atque nostrum quaerat id voluptatum. Aspernatur libero minus doloribus cumque ratione architecto cum, delectus, repudiandae, deleniti sapiente quibusdam. Nulla?
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis saepe error, eaque quia unde fuga, doloremque iusto quidem laudantium dicta quam iste vitae ea amet numquam reprehenderit vel aliquid ducimus!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque corrupti, perspiciatis eum enim temporibus dolores incidunt mollitia quos error nam nobis, asperiores eius unde nemo saepe minus, alias voluptate. Fugiat?
+        <div className="px-16 py-10 overflow-auto text-xl h-max">
+            <div>
+                Hello, allow me to introduce myself. My name is Eduardo Brilliandy - people usually call me Edo!<br/>
+                <br/>
+                I have a passion and interest in Computer Science and Programming. 
+                I am always motivated to learn more and gain more experience in these fields. 
+                I have challenged myself multiple times and will keep pushing through boundaries to learn more.<br/>
+                <br/>
+            </div>
 
+            <div>
+                <div>
+                    You can find me on
+                </div>
+
+                <div className="pl-8 grid grid-cols-2 lg:w-1/2">
+                    <div>
+                        LinkedIn:
+                    </div>
+                    <div>
+                        <Link to="https://www.linkedin.com/in/eduardo-brilliandy/" target="_blank" rel="noopener noreferrer">Eduardo Brilliandy</Link>
+                    </div>
+
+                    <div>
+                        Instagram: 
+                    </div>
+                    <div>
+                        <Link to="https://www.instagram.com/edo_brilliandy/" target="_blank" rel="noopener noreferrer">edo_brilliandy</Link>
+                    </div>
+
+                    <div>
+                        WhatsApp:
+                    </div>
+                    <div>
+                        081779991235
+                    </div>
+
+                    <div>
+                        Email:
+                    </div>
+                    <div>
+                        edobrilliandy@gmail.com
+                    </div>
+
+                    <div>
+                        GitHub:
+                    </div>
+                    <div>
+                    <Link to="https://github.com/edotheepic" target="_blank" rel="noopener noreferrer">edotheepic</Link>
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 };

@@ -13,7 +13,7 @@ export default function Layout(params) {
                 <Name></Name>
             </div>
 
-            <div className="md:w-1/2 md:h-dvh pt-10">
+            <div className="xl:w-1/2 md:w-2/3 md:h-dvh pt-10">
                 <Navbar></Navbar>
                 <Outlet></Outlet>
             </div>
