@@ -3,6 +3,6 @@
 This Page is currently a WIP.
 Can be accessed on <https://edotheepic.github.io/>
 
-## This website is mage using
+## This website is made using
 - React JS
 - Tailwind CSS
