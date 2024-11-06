@@ -9,13 +9,13 @@ export default {
       keyframes: {
         float: {
           "0%": {
-            transform: "translateY(0rem)",
+            transform: "translateY(0rem) scale(1.1)",
           },
           "50%": {
-            transform: "translateY(-0.5rem)",
+            transform: "translateY(-0.5rem) scale(1.1)",
           },
           "100%": {
-            transform: "translateY(0rem)",
+            transform: "translateY(0rem) scale(1.1)",
           },
         },
         blink: {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Typewriter from "./Typewriter";
 
 export default function Name(params) {
     
@@ -12,24 +13,12 @@ export default function Name(params) {
     });
 
     return(
-        <div className="pt-10">
-            <div className="text-6xl">
-                Hello, I am
-            </div>
-            <div>
+        <div className="flex flex-col w-3/4 pt-10 text-6xl tracking-wider font-mono">
 
-            </div>
+            <Typewriter 
+                text={"Hello,\nI am\nEduardo\nBrilliandy"}
+            />
 
-            <div className="flex">
-                <div className="text-6xl">
-                    Edo
-                </div>
-                {cursorVis && 
-                    <div className="text-6xl">
-                        _
-                    </div>
-                }
-            </div>
         </div>
     )
 };
