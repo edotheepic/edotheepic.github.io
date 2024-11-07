@@ -1,5 +1,12 @@
 export default function NewLineText({text}) {
-    const newText = text.split('\n').map(str => <><div className="basis-full"/><div>{str}</div></>);
 
-    return newText;
+    return(
+        <div>
+            {text.split('\n').map((str, index) => (
+                <div key={index}>
+                    <div>{str}</div>
+                </div>
+            ))}
+        </div>
+    )
 };

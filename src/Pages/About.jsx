@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function About(params) {
     
     return(
-        <div className="px-16 py-10 overflow-auto text-xl h-max">
+        <div className="text-xl animate-appear">
             <div>
                 Hello, allow me to introduce myself. My name is Eduardo Brilliandy - people usually call me Edo!<br/>
                 <br/>

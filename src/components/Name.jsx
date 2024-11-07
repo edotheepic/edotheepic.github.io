@@ -13,7 +13,7 @@ export default function Name(params) {
     });
 
     return(
-        <div className="flex flex-col w-3/4 py-10 text-4xl sm:text-5xl md:text-3xl xl:text-5xl 2xl:text-6xl tracking-wider font-mono overflow-clip">
+        <div className="flex flex-col w-3/4 pt-10 pb-2 text-4xl sm:text-5xl md:text-3xl xl:text-5xl 2xl:text-6xl tracking-wider font-mono overflow-clip">
 
             <Typewriter 
                 text={"Hello,\nI am\nEduardo\nBrilliandy"}

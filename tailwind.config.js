@@ -18,21 +18,20 @@ export default {
             transform: "translateY(0rem) scale(1.1)",
           },
         },
-        blink: {
+        appear: {
           "0%": {
             opacity: "0",
-          },
-          "50%": {
-            opacity: "1",
+            transform: "translateY(2rem)",
           },
           "100%": {
-            opacity: "0",
+            opacity: "1",
+            transform: "translateY(0rem)",
           },
         }
       },
       animation: {
         float: "float 5s ease-in-out infinite",
-        blink: "blink 1s infinite"
+        appear: "appear 2s"
       },
     },
   },

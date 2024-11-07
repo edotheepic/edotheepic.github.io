@@ -15,7 +15,9 @@ export default function Layout(params) {
 
             <div className="xl:w-1/2 md:w-2/3 md:h-dvh pt-10">
                 <Navbar></Navbar>
-                <Outlet></Outlet>
+                <div className="px-16 pt-10">
+                    <Outlet></Outlet>
+                </div>
             </div>
         </div>
     )
