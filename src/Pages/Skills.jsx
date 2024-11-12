@@ -1,5 +1,37 @@
 import SkillBox from "../components/SkillBox";
 
+const prog_list = [
+    "Python",
+    "Java",
+    "C",
+    "C++",
+    "C#",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "PHP",
+    "SQL",
+    "Laravel",
+    "Java Spring Boot",
+    "React",
+    "Angular",
+    "Machine Learning",
+    "Deep Learning",   
+]
+
+const lang_list = [
+    "Bahasa Indonesia",
+    "English",
+]
+
+const soft_list = [
+    "Teamwork",
+    "Communication",
+    "Project Management",
+    "Problem Solving",
+    "Time management",
+]
+
 export default function Skills(params) {
     
     return(
@@ -10,22 +42,11 @@ export default function Skills(params) {
                     Programming Skills
                 </div>
                 <div className="flex flex-wrap py-2">
-                    <SkillBox content="Python"/>
-                    <SkillBox content="Java"/>
-                    <SkillBox content="C"/>
-                    <SkillBox content="C++"/>
-                    <SkillBox content="C#"/>
-                    <SkillBox content="HTML"/>
-                    <SkillBox content="CSS"/>
-                    <SkillBox content="Javascript"/>
-                    <SkillBox content="PHP"/>
-                    <SkillBox content="SQL"/>
-                    <SkillBox content="Laravel"/>
-                    <SkillBox content="Java Spring Boot"/>
-                    <SkillBox content="React"/>
-                    <SkillBox content="Angular"/>
-                    <SkillBox content="Machine Learning"/>
-                    <SkillBox content="Deep Learning"/>
+                    {prog_list.map((title, index) => (
+
+                        <SkillBox key={index} content={title}/>
+                        
+                    ))}
                 </div>
             </div>
             <div className="pb-4">
@@ -33,8 +54,11 @@ export default function Skills(params) {
                     Language Skills
                 </div>
                 <div className="flex flex-wrap py-2">
-                    <SkillBox content="Bahasa Indonesia"/>
-                    <SkillBox content="English"/>
+                    {lang_list.map((title, index) => (
+
+                        <SkillBox key={index} content={title}/>
+                        
+                    ))}
                 </div>
             </div>
 
@@ -43,11 +67,11 @@ export default function Skills(params) {
                     Soft Skills
                 </div>
                 <div className="flex flex-wrap py-2">
-                    <SkillBox content="Teamwork"/>
-                    <SkillBox content="Communication"/>
-                    <SkillBox content="Project Management"/>
-                    <SkillBox content="Problem Solving"/>
-                    <SkillBox content="Time management"/>
+                    {soft_list.map((title, index) => (
+
+                        <SkillBox key={index} content={title}/>
+                        
+                    ))}
                 </div>
             </div>
         </div>
